@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { fetchPoolAndSwaps } from '@/lib/graph';
-import { roughAprAndIl } from '@/lib/sim';
+import { fetchPoolAndSwaps } from '../../../lib/graph';
+import { roughAprAndIl } from '../../../lib/sim';
 
 const Body = z.object({
   pool: z.string().min(1),
